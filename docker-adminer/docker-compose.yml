@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  adminer:
+    image: adminer:4.3
+    network_mode: "bridge"
+    restart: always
+    environment:
+      - VIRTUAL_HOST=adminer.local
